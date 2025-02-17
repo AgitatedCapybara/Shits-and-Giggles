@@ -1,0 +1,26 @@
+--- Credits to @mrman37.
+--- For Roblox Studio, put this script (not LocalScript) in StarterPlayer>StarterPlayerScripts
+--- For you monkeys out there, this also works ingame, but only kicks you lmao. You need a serverside executor to do that.
+
+while true do
+	wait(0.1)
+
+	local niggas = game.Players:GetPlayers()
+
+	print("iwantkfc")
+	
+	for _, player in pairs(niggas) do
+		
+		if player and player.Character then
+			local nigga = player.Character
+
+
+			local niggasstillhere = nigga:FindFirstChildOfClass("Humanoid")
+
+			if niggasstillhere then
+				print("nigga")
+				player:Kick("niggacheeseisntcheesing")
+			end
+		end
+	end
+end
